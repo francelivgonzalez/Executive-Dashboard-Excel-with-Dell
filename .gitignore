@@ -1,0 +1,46 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# Original and processed datasets
+data/raw/
+data/processed/
+
+# Generated analysis outputs
+results/
+
+# Model checkpoints and caches
+models/
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
