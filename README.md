@@ -1,131 +1,458 @@
-# Dell-Technologies-llm-evaluation-framework
-This project documents a comparative LLM evaluation framework developed for a Dell business case, analyzing how different models perform under varying prompts and parameters to support reliable, solution-focused recommendations.
-# Comparative LLM Evaluation Framework for Business Case Analysis
 
 
-## Overview
-
-This project documents a comparative **large language model (LLM) evaluation framework** developed as part of a Dell business case focused on using AI to support modern business decision-making. The goal was not to train a new model, but to evaluate how existing generative AI systems respond to the same business problem under different prompts, structures, and parameter choices in order to determine which approaches produced the most reliable, consistent, and solution-focused outputs.
-
-The work centered on comparing models such as **ChatGPT, Gemini, Claude, and Copilot** using a real business dataset and testing how prompt design influenced the quality of results. This project combines **prompt engineering, structured model evaluation, data analysis, and business-focused technical recommendation development**.
+\# Executive Dashboard — Excel with Dell
 
 
-## Project Context
-This work was developed through **Excel with Dell**, where I was selected as **1 of 50 participants nationwide** to work with a cross-university team and Dell professionals on an AI-driven business modernization case study.
 
-The case study focused on exploring how AI could be used in a practical business setting to improve analysis, support decision-making, and guide a realistic infrastructure recommendation. Since the project involved a single provided dataset, the emphasis was not on building or training a custom AI model. Instead, the focus was on understanding how to use existing LLMs effectively, evaluate their outputs critically, and determine how those outputs could be translated into a strong technical and business solution.
-
-## My Role
-
-My role in this project involved both the **technical evaluation of AI model behavior** and the **analysis/presentation of results**.
-
-I was responsible for:
-- Comparing the responses of multiple LLMs across the same business prompts
-- Testing how different prompt structures affected output quality, consistency, and usefulness
-- Identifying strengths and weaknesses across models for case-specific tasks
-- Using prompt engineering to improve reliability and reduce vague or inconsistent responses
-- Translating model findings into practical recommendations for the business case
-- Supporting the final infrastructure-oriented solution framing
-- Building a **Tableau dashboard** to visualize insights from the dataset and communicate findings more clearly
+\### Catalyst Consulting | Customer Intelligence Platform
 
 
-## Role of AI in the Project
 
-AI played a central role in this case study, but it was used as an **evaluated decision-support tool**, not as an unquestioned answer engine.
-
-The purpose was to study:
-- how different LLMs interpret the same business context,
-- how sensitive they are to prompt wording and structure,
-- how consistently they generate usable insights,
-- and which model behaviors are most helpful when shaping a real-world recommendation.
-
-This project treated AI as something that needed to be **tested, compared, and guided carefully**. Rather than assuming one model would always perform best, the framework was built to examine where each model was stronger, where it was weaker, and how prompt design could improve outcome quality.
+An interactive customer intelligence dashboard developed as an extension of the Excel with Dell case competition.
 
 
-## Evaluation Approach
 
-The framework was designed to compare LLM performance across several dimensions, including:
-
-- **Response consistency**
-- **Relevance to the business problem**
-- **Clarity and actionability**
-- **Ability to stay grounded in the provided dataset**
-- **Usefulness for shaping technical recommendations**
-- **Sensitivity to prompt phrasing and parameter choices**
-
-Different prompts were used to explore how each model responded when asked to:
-- summarize findings,
-- identify trends,
-- support recommendations,
-- explain business implications,
-- and contribute to a broader modernization strategy.
-
-This made it possible to evaluate not only the models themselves, but also the effect of **prompt engineering** on answer quality.
+The application combines sentiment analysis, natural language processing, topic modeling, and interactive visualizations to transform customer feedback into actionable business insights.
 
 
-## Tableau Dashboard
 
-As part of the case study, I also developed a **Tableau dashboard** to help analyze and communicate key patterns from the dataset. The dashboard served as a visual layer for the project, making it easier to interpret findings, compare trends, and support the broader business recommendation with a clearer data story.
-
-The Tableau component helped:
-- organize the dataset into more digestible insights,
-- identify patterns relevant to the case,
-- support model-generated observations with visual analysis,
-- and strengthen the final recommendation by pairing AI-assisted interpretation with human-led data validation.
-
-This was important because the project was not just about generating AI responses. It was about combining **AI evaluation + data analysis + business reasoning** in a way that produced something practical and defensible.
+\## Project Overview
 
 
-## Technical Focus
 
-This project highlights experience in:
-- Prompt engineering
-- Comparative LLM evaluation
-- AI-assisted business analysis
-- Data analysis
-- Tableau dashboard development
-- Technical recommendation building
-- Solution architecture thinking
-- Cross-functional collaboration
+Customer reviews contain valuable information about product performance, customer satisfaction, and recurring issues. However, manually interpreting thousands of reviews can be time-consuming.
 
 
-## Why This Project Matters
 
-One of the biggest takeaways from this work was that effective AI use is not just about asking a model a question and accepting the answer. The real value comes from understanding how to structure prompts, compare responses, validate outputs against the data, and decide which results are actually useful in a real business setting.
-
-This project reflects the growing importance of being able to work **with AI critically and strategically**, especially in environments where business decisions need to be supported by both technical insight and clear communication.
+This project develops an automated evaluation framework that analyzes customer feedback and presents recurring concerns through an executive-facing dashboard.
 
 
-## Key Outcomes
 
-- Built a framework to compare multiple LLMs on the same business case
-- Evaluated how prompt design influenced consistency and usefulness
-- Identified model-specific strengths for different analytical tasks
-- Used AI outputs to support practical, solution-focused recommendations
-- Created a Tableau dashboard to strengthen data interpretation and presentation
-- Contributed to an AI-driven modernization case study with real business relevance
+The application is organized around two audiences:
 
 
-## Tools and Technologies
 
-- ChatGPT
-- Gemini
-- Claude
-- Copilot
-- Tableau
-- Data analysis workflows
-- Prompt engineering methods
+\*\*Executive Dashboard\*\*
+
+\- Visualizes the most frequently discussed customer issues.
+
+\- Uses topic modeling to identify recurring complaint themes.
+
+\- Represents issue frequency through differently sized red ovals.
+
+\- Highlights areas requiring further investigation.
+
+\- Prioritizes concise, decision-oriented insights.
 
 
-## Future Improvements
 
-- Add a more formal scoring rubric for model comparison
-- Expand prompt testing across additional business scenarios
-- Document parameter sensitivity more systematically
-- Integrate side-by-side output logging for reproducibility
-- Refine the evaluation framework for broader enterprise AI use cases
-- LEARN AND TRAIN AN AI MODEL
+\*\*Analysts \& Engineers\*\*
 
-## Author
-**Franceli Gonzalez**  
-Electrical Engineering student with interests in AI, data analytics, automation, and technical problem solving.
+\- Compares sentiment classification models.
+
+\- Displays evaluation metrics and confusion matrices.
+
+\- Investigates disagreements between models.
+
+\- Explores individual customer reviews.
+
+\- Supports more detailed technical analysis.
+
+
+
+\## Dataset
+
+
+
+The project uses a FusionTech customer-review dataset provided for the Excel with Dell case competition.
+
+
+
+| Description | Reviews |
+
+|---|---:|
+
+| Original dataset | 4,132 |
+
+| Duplicate reviews removed | 43 |
+
+| Cleaned dataset | 4,087 |
+
+| Initial evaluation sample | 150 |
+
+| Full evaluation | 4,087 |
+
+
+
+Sentiment reference labels were derived from customer star ratings.
+
+
+
+These labels are proxies for customer sentiment rather than independently verified sentiment annotations.
+
+
+
+The original datasets are not included in this repository.
+
+
+
+\## Sentiment Analysis Models
+
+
+
+\### VADER
+
+
+
+VADER is a lexicon-based sentiment classifier that assigns sentiment scores using predefined word associations and linguistic heuristics.
+
+
+
+\### RoBERTa
+
+
+
+The framework uses:
+
+
+
+`cardiffnlp/twitter-roberta-base-sentiment-latest`
+
+
+
+RoBERTa is a transformer-based classifier that uses contextual language representations to predict negative, neutral, or positive sentiment.
+
+
+
+GPU inference was performed using an NVIDIA Quadro T2000 with CUDA-enabled PyTorch.
+
+
+
+\## Full-Dataset Evaluation Results
+
+
+
+Both models were evaluated using the same 4,087 cleaned customer reviews.
+
+
+
+| Metric | VADER | RoBERTa |
+
+|---|---:|---:|
+
+| Rating-label agreement | 73.23% | 77.64% |
+
+| Macro F1 | 0.51 | 0.60 |
+
+| Negative recall | 56% | 83% |
+
+| Neutral recall | 6% | 17% |
+
+| Positive recall | 89% | 83% |
+
+
+
+RoBERTa demonstrated stronger overall agreement with the rating-derived labels and higher negative recall.
+
+
+
+However, VADER achieved higher positive recall.
+
+
+
+Both models struggled with neutral sentiment.
+
+
+
+\## Model Comparison
+
+
+
+Across 4,087 reviews:
+
+
+
+\- Identical model predictions: 3,055
+
+\- Different model predictions: 1,032
+
+\- Model agreement rate: 74.75%
+
+\- Cohen's kappa: 0.4903
+
+\- Only RoBERTa matched the rating: 517 reviews
+
+\- Only VADER matched the rating: 337 reviews
+
+\- Neither model matched the rating: 577 reviews
+
+
+
+The disagreement analysis identified several areas for further investigation, including technical complaints, mixed sentiment, long reviews, historical review updates, and rating-text mismatches.
+
+
+
+\## Topic Modeling
+
+
+
+The executive dashboard incorporates unsupervised topic modeling using TF-IDF and Non-negative Matrix Factorization (NMF).
+
+
+
+Negative-rated customer reviews are analyzed to identify recurring discussion themes.
+
+
+
+The dashboard visualizes these themes using red ovals:
+
+
+
+\- Larger ovals indicate more frequently discussed topics.
+
+\- Darker red indicates greater topic frequency.
+
+\- Smaller ovals indicate less frequently discussed topics.
+
+
+
+Oval size represents discussion frequency, not necessarily business severity.
+
+
+
+The generated topics are exploratory and should be validated before being used to support business decisions.
+
+
+
+\## Technology Stack
+
+
+
+\*\*Programming\*\*
+
+\- Python
+
+
+
+\*\*Machine Learning and NLP\*\*
+
+\- PyTorch
+
+\- Hugging Face Transformers
+
+\- RoBERTa
+
+\- VADER
+
+\- Scikit-learn
+
+\- TF-IDF
+
+\- NMF
+
+
+
+\*\*Analysis\*\*
+
+\- Pandas
+
+\- Classification metrics
+
+\- Confusion matrices
+
+\- Model disagreement analysis
+
+
+
+\*\*Application\*\*
+
+\- Streamlit
+
+\- Interactive dashboards
+
+\- Review exploration
+
+\- Executive visualizations
+
+
+
+\*\*Development\*\*
+
+\- Git
+
+\- GitHub
+
+\- Windows CMD
+
+\- Python virtual environments
+
+
+
+\## Project Structure
+
+
+
+```text
+
+dashboard/
+
+&#x20;   app.py
+
+&#x20;   pages/
+
+&#x20;       1\_Analysts\_and\_Engineers.py
+
+
+
+src/
+
+&#x20;   prepare\_data.py
+
+&#x20;   evaluate\_vader.py
+
+&#x20;   evaluate\_vader\_full.py
+
+&#x20;   evaluate\_transformer.py
+
+&#x20;   analyze\_errors.py
+
+&#x20;   compare\_models.py
+
+&#x20;   analyze\_model\_disagreements.py
+
+&#x20;   generate\_error\_report.py
+
+
+
+data/
+
+&#x20;   raw/
+
+&#x20;   processed/
+
+
+
+results/
+
+docs/
+
+README.md
+
+requirements.txt
+
+.gitignore
+
+```
+
+
+
+\## Running the Application
+
+
+
+Clone the repository and navigate to the project directory.
+
+
+
+Create a Python virtual environment:
+
+
+
+```cmd
+
+python -m venv .venv
+
+```
+
+
+
+Activate it on Windows:
+
+
+
+```cmd
+
+.venv\\Scripts\\activate
+
+```
+
+
+
+Install the required packages:
+
+
+
+```cmd
+
+python -m pip install -r requirements.txt
+
+```
+
+
+
+Supply the required review data and generate the evaluation outputs using the scripts in `src/`.
+
+
+
+The dashboard requires generated analysis results in the `results/` directory.
+
+
+
+Start the dashboard:
+
+
+
+```cmd
+
+python -m streamlit run dashboard\\app.py
+
+```
+
+
+
+The application runs locally in a web browser.
+
+
+
+\## Evaluation Limitations
+
+
+
+\- Star ratings may not accurately represent written sentiment.
+
+\- The two sentiment models are primarily designed for English text.
+
+\- Long customer reviews may be truncated during transformer inference.
+
+\- Mixed sentiment and historical review updates can complicate classification.
+
+\- Automatically discovered topics may overlap.
+
+\- Topic frequency does not necessarily indicate business impact or severity.
+
+\- The evaluation does not establish model accuracy against independently annotated sentiment labels.
+
+
+
+\## Project Purpose
+
+
+
+The primary objective is to demonstrate how machine learning and natural language processing can turn large volumes of customer feedback into understandable, decision-oriented information.
+
+
+
+The project emphasizes the separation of executive decision support from detailed technical model evaluation.
+
+
+
+\## Project Background
+
+
+
+Developed as a portfolio extension of the Excel with Dell case competition.
+
+
+
+The application and analysis represent independent project development and should not be interpreted as an official Dell Technologies product or endorsement.
+
